@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poluição Têxtil</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f5;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        section img {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        #topo {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Impactos da Poluição Têxtil</h1>
+        <p>Um olhar sobre os efeitos ambientais da indústria da moda</p>
+    </header>
+
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#causas">Causas</a>
+        <a href="#impactos">Impactos</a>
+        <a href="#solucoes">Soluções</a>
+    </nav>
+
+    <section id="introducao">
+        <h2>Introdução</h2>
+        <p>A indústria têxtil é uma das maiores responsáveis pela poluição global. Desde o uso excessivo de água até o descarte inadequado de produtos químicos, seus efeitos têm impacto direto no meio ambiente.</p>
+        <img src="https://images.unsplash.com/photo-1589998059171-72d293be0432?auto=format&fit=crop&w=1200&q=80" alt="Poluição industrial em rio">
+    </section>
+
+    <section id="causas">
+        <h2>Causas da Poluição Têxtil</h2>
+        <ul>
+            <li>Uso intensivo de água e produtos químicos no tingimento de tecidos</li>
+            <li>Descarte de resíduos industriais sem tratamento adequado</li>
+            <li>Produção em massa e consumo desenfreado (fast fashion)</li>
+            <li>Liberação de microplásticos durante a lavagem de roupas sintéticas</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1622376723324-48cf8bb5ea88?auto=format&fit=crop&w=1200&q=80" alt="Montanha de roupas">
+    </section>
+
+    <section id="impactos">
+        <h2>Impactos Ambientais</h2>
+        <p>Entre os principais efeitos da poluição têxtil estão:</p>
+        <ul>
+            <li>Contaminação de rios e oceanos</li>
+            <li>Prejuízo à fauna aquática</li>
+            <li>Emissão de gases de efeito estufa</li>
+            <li>Degradação do solo e da biodiversidade</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1599488615734-d6f76c933c99?auto=format&fit=crop&w=1200&q=80" alt="Água poluída">
+    </section>
+
+    <section id="solucoes">
+        <h2>Soluções Sustentáveis</h2>
+        <p>Para reduzir os impactos da poluição têxtil, podemos adotar medidas como:</p>
+        <ul>
+            <li>Reutilizar e reciclar roupas</li>
+            <li>Apoiar marcas sustentáveis</li>
+            <li>Evitar o consumo excessivo</li>
+            <li>Optar por tecidos orgânicos ou biodegradáveis</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1598032897745-5c8c67c4bcee?auto=format&fit=crop&w=1200&q=80" alt="Moda sustentável">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Conscientização Ambiental</p>
+    </footer>
+
+    <button id="topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Topo</button>
+
+    <script>
+        // Mostrar botão "Topo" ao rolar
+        window.onscroll = function () {
+            const btn = document.getElementById("topo");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
